@@ -1,0 +1,86 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  @apply bg-off-white font-poppins flex h-screen w-full items-center;
+}
+
+main {
+  @apply max-w-[850px] w-full bg-white lg:mx-auto mx-4 lg:p-16 p-4 rounded-s-3xl rounded-br-[25%] rounded-tr-3xl;
+}
+
+form {
+  @apply flex lg:justify-start justify-center;
+}
+
+form div {
+  @apply flex flex-col
+}
+
+.input {
+  @apply border-2 lg:max-w-40 max-w-16 h-16 w-full rounded-md mr-8 lg:text-3xl text-base font-semibold lg:px-4 px-[0.5em] text-smoke-grey;
+}
+
+.label {
+  @apply pb-2 tracking-widest font-bold text-smoke-grey;
+}
+.label.err {
+  @apply text-light-red
+}
+
+.line {
+  @apply relative;
+}
+
+.line hr {
+  @apply my-12;
+}
+
+.line button {
+  @apply bg-purple absolute top-0 left-1/2 -translate-x-1/2 md:right-0 md:left-auto -translate-y-1/2 rounded-full md:p-6 p-3 hover:bg-off-black;
+}
+
+section {
+  @apply lg:text-8xl text-4xl lg:max-w-full max-w-80 mx-auto;
+}
+
+section div .hyphens {
+  @apply text-purple;
+}
+
+.hyphens.active {
+  @apply hidden;
+}
+
+section div span:nth-child(2) {
+  @apply invisible;
+}
+
+section div span.active:nth-child(2) {
+  @apply visible text-purple;
+}
+
+section div span:nth-child(3) {
+  @apply tracking-tight italic font-semibold; 
+}
+
+.input::placeholder {
+  @apply text-smoke-grey;
+}
+
+.input.invalid {
+  @apply border-light-red;
+}
+
+.input.invalid:focus {
+  @apply outline-light-red;
+}
+
+.input:active, .input:focus {
+  @apply outline-purple;
+}
+
+.error {
+  @apply text-light-red pt-4 text-xs;
+}
