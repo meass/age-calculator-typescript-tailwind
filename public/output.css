@@ -735,6 +735,7 @@ section div span:nth-child(3) {
 }
 
 .error {
+  max-width: 6rem;
   padding-top: 1rem;
   font-size: 10px;
   --tw-text-opacity: 1;

@@ -82,5 +82,5 @@ section div span:nth-child(3) {
 }
 
 .error {
-  @apply text-light-red pt-4 lg:text-xs text-[10px];
+  @apply text-light-red pt-4 lg:text-xs text-[10px] max-w-24;
 }
