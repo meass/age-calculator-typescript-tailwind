@@ -5,8 +5,6 @@
   "main": "index.js",
   "homepage": "https://meass.github.io/age-calculator-typescript-tailwind",
   "scripts": {
-    "predeploy": "npm run build",
-+   "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx tailwindcss -i ./public/styles.css -o ./public/output.css --watch"
   },
